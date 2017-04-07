@@ -2,12 +2,16 @@
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
 
 html,body{
 margin:0;
 padding:0;
 font-family: 'Roboto', sans-serif;
-background: #090909;
+background: #42aadd;
 background-size: cover;
 height: 100%;
 width: 100%;
@@ -15,14 +19,17 @@ width: 100%;
 
 
 #wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -190px;
 max-width: 100%;
-width: 400px;
-margin: 0 auto;
+width: 380px;
 }
 
 .main{
 max-width: 100%;
-width: 400px;
+width: 380px;
 float: left;
 }
 
@@ -31,16 +38,13 @@ width: 100%;
 float: left;
 }
 
-
-
 .header{
 	margin-top: 160px;
 	margin-bottom: 40px;
 }
 
 .information{
-width: 480px;
-padding-top: 35px;
+width: 380px;
 margin: 0 auto;
 }
 
@@ -58,12 +62,11 @@ display: block;
 
 .form{
 position: relative;
-width: 478px;
-margin-top: 20px;
+width: 380px;
 }
 
 .field{
-width: 400px;
+width: 100%;
 border-radius: 8px;
 border: none;
 font-size: 16px;
@@ -75,7 +78,7 @@ outline: none;
 
 .submit{
 position: absolute;
-right: 55px;
+right: 8px;
 top: 6px;
 padding: 10px 10px;
 border-radius: 4px;
